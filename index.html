@@ -13,33 +13,6 @@
 		<title>Где рыба</title>
 	</head>
 	<body>
-<?
-function words($int, $expressions){
-    settype($int, "integer");
-    $count = $int % 100;
-    if ($count >= 5 && $count <= 20){
-        $result = $expressions['2'];
-    }else{
-        $count = $count % 10;
-        if ($count == 1){
-            $result = $expressions['0'];
-        }elseif ($count >= 2 && $count <= 4){
-            $result = $expressions['1'];
-        }else{
-            $result = $expressions['2'];
-        }
-    }
-    return $result;
-}
-$i = 586;
-echo $i . ' ' . words($i, array('день', 'дня', 'дней'));
-
-$a = 1;
-if ($a != 1)
-	echo ' verno';
-
-else echo ' neverno';
-?>
 		<div class="top flexcontainer">
 		
 			<div class="menu">
